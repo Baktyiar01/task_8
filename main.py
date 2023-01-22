@@ -27,6 +27,19 @@
 # # 4. С клавиатуры вводится целое число. Необходимо вывести число, обратное введенному по порядку составляющих его цифр. 
 # Например, если было введено число 12345, программа должна вывести пользователю на экран число 54321.
 
+# number = input('Enter the number: ')
+
+# reverse_number = []
+# new_number = ''
+
+# for n in number:
+#     reverse_number.insert(0, n)
+
+# for n in reverse_number:
+#     new_number += n
+
+# print(f'Перевернутый {new_number} ')
+
 
 # 5.Получите и преобразуйте текущую системную дату, возвращаемую методом date.today() модуля стандартной библиотеки datetime,
 # из формата «год-месяц-день» в формат «день.месяц.год». Выведите оба формата даты на экран.
@@ -58,9 +71,9 @@
 # a = 5
 # b = 10
 
-# if a >= 0 or b >=0:
+# if a >= 0 and b >=0:
 #     print(True)
-# elif a < 0 or b < 0:
+# elif a < 0 and b < 0:
 #     print(True)
 # else:
 #     print()
@@ -85,20 +98,75 @@
 
 #  1. Посчитайте количество символов в строке 'Python - это Питон!', использовав счетчики на основе циклов for и while.
 
-text = 'Python - это Питон!'
+# text = 'Python - это Питон!'
 
-while text.isalpha():
-    print(len(text))
-
-
+# while text.isalpha():
+#     print(len(text))
 
 
+#2. Найдите сумму всех элементов списка [1, '2', 3, 4, '5'], предварительно приводя строки к целым числам
 
-# for i in range(2, 15):
-#     if i % 2 ==0:
-#         for j in range(2, 15):
-#             print('/ \_', end='')
-#     else:
-#         for j in range(2, 15):
-#             print('\_/', end='')
-#         print('')
+# number_list = [1,'2',3, 4,'5']
+
+# number_list_1 = [int(i) for i in number_list]
+
+# print(sum(number_list_1))
+
+# 3.Используя циклы, проверьте при помощи оператора in наличие символов строки 'abcde123' в строке 'bad_cat_23', 
+# выводя результаты проверки на экран в виде «Символ "a" есть в "bad_cat_23".» или «Символа "n" нет в "bad_cat_23".».
+
+list_1 = 'abcde123'
+list_2 = 'bad_cat_23'
+
+if list_1[0] in list_2:
+    print(f'Символ "{list_1[0]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[0]}" нет в "{list_2}"')
+
+if list_1[1] in list_2:
+    print(f'Символ "{list_1[1]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[1]}" нет в "{list_2}"')
+
+if list_1[2] in list_2:
+    print(f'Символ "{list_1[2]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[2]}" нет в "{list_2}"')
+
+if list_1[3] in list_2:
+    print(f'Символ "{list_1[3]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[4]}" нет в "{list_2}"')
+
+if list_1[4] in list_2:
+    print(f'Символ "{list_1[4]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[4]}" нет в "{list_2}"')
+
+if list_1[5] in list_2:
+    print(f'Символ "{list_1[5]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[5]}" нет в "{list_2}"')
+
+if list_1[6] in list_2:
+    print(f'Символ "{list_1[6]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[6]}" нет в "{list_2}"')
+
+if list_1[-1] in list_2:
+    print(f'Символ "{list_1[-1]}" есть в "{list_2}"')
+else:
+    print(f'Символ "{list_1[-1]}" нет в "{list_2}"')
+
+
+# 4. Cгенерируйте и выведите на экран мозаичное изображение гексагональной сетки, напоминающее мелкоячеистую проволочную сетку.
+x_size = 15
+y_size = 10
+
+for i in range(y_size):
+    for x in range(x_size):
+        print(r'/ \_', end='')
+    print()
+    for x in range(x_size):
+        print(r'\_/ ', end='')
+    print()
