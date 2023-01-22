@@ -3,105 +3,105 @@
 
 # 1.Перевести граммы в килограммы и вывести результат на экран. Значение граммов ввести с клавиатуры.
 
-# gramm = int(input('Enter the sum of gramms: '))
+gramm = int(input('Enter the sum of gramms: '))
 
-# result = gramm / 1000
-# print(result)
+result = gramm / 1000
+print(result)
 
 # 2.Даны две переменные x = 10 и y = 55. Поменяйте их значения местами. 
 # Выведите значения переменных на экран до и после замены.
 
-# x = 10
-# y = 55
+x = 10
+y = 55
 
-# print(f' {x, y}, {y, x}')
+print(f' {x, y}, {y, x}')
 
 
 # 3. С клавиатуры вводится расстояние L в метрах. Необходимо найти и вывести на экран количество полных километров в нем.
 
-# l = int(input('Enter a distance in meters: '))
+l = int(input('Enter a distance in meters: '))
 
-# km = l // 1000
-# print(km)
+km = l // 1000
+print(km)
 
 # # 4. С клавиатуры вводится целое число. Необходимо вывести число, обратное введенному по порядку составляющих его цифр. 
 # Например, если было введено число 12345, программа должна вывести пользователю на экран число 54321.
 
-# number = input('Enter the number: ')
+number = input('Enter the number: ')
 
-# reverse_number = []
-# new_number = ''
+reverse_number = []
+new_number = ''
 
-# for n in number:
-#     reverse_number.insert(0, n)
+for n in number:
+    reverse_number.insert(0, n)
 
-# for n in reverse_number:
-#     new_number += n
+for n in reverse_number:
+    new_number += n
 
-# print(f'Перевернутый {new_number} ')
+print(f'Перевернутый {new_number} ')
 
 
 # 5.Получите и преобразуйте текущую системную дату, возвращаемую методом date.today() модуля стандартной библиотеки datetime,
 # из формата «год-месяц-день» в формат «день.месяц.год». Выведите оба формата даты на экран.
 
-# import datetime
+import datetime
 
-# date_1 = datetime.date.today()
-# date_2 = datetime.date.today(). strftime("%d.%m.%Y")
+date_1 = datetime.date.today()
+date_2 = datetime.date.today(). strftime("%d.%m.%Y")
 
-# print(f' {date_1}, {date_2} ')
+print(f' {date_1}, {date_2} ')
 
 
 # Логические выражения
 
 # 1. Записать и вывести на экран условие, которое является истинным, когда хотя бы одно из чисел x, y и z больше 80.
 
-# x = 10
-# y = 50
-# z = 75
+x = 10
+y = 50
+z = 75
 
-# if x > 80 or y > 80 or z > 80:
-#     print(True)
-# else:
-#     print()
+if x > 80 or y > 80 or z > 80:
+    print(True)
+else:
+    print()
 
     
 # 2. Записать и вывести на экран условие, которое является истинным, когда оба числа a и b одновременно положительны или отрицательны.
 
-# a = 5
-# b = 10
+a = 5
+b = 10
 
-# if a >= 0 and b >=0:
-#     print(True)
-# elif a < 0 and b < 0:
-#     print(True)
-# else:
-#     print()
+if a >= 0 and b >=0:
+    print(True)
+elif a < 0 and b < 0:
+    print(True)
+else:
+    print()
 
 
 # 3. Даны три числа: 130, 25 и 70. Выведите на экран наименьшее из них, использовав для этого программную проверку.
 
-# a = 130
-# b = 25
-# c = 70
+a = 130
+b = 25
+c = 70
 
-# if a < b and a < c:
-#     print(a)
-# elif b < a and b < c:
-#     print(b)
-# elif c < a and c < b:
-#     print(c)
-# else:
-#     print()
+if a < b and a < c:
+    print(a)
+elif b < a and b < c:
+    print(b)
+elif c < a and c < b:
+    print(c)
+else:
+    print()
 
 # Циклы
 
 #  1. Посчитайте количество символов в строке 'Python - это Питон!', использовав счетчики на основе циклов for и while.
 
-# text = 'Python - это Питон!'
+text = 'Python - это Питон!'
 
-# while text.isalpha():
-#     print(len(text))
+while text.isalpha():
+    print(len(text))
 
 
 #2. Найдите сумму всех элементов списка [1, '2', 3, 4, '5'], предварительно приводя строки к целым числам
