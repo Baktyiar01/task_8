@@ -106,33 +106,33 @@ while text.isalpha():
 
 #2. Найдите сумму всех элементов списка [1, '2', 3, 4, '5'], предварительно приводя строки к целым числам
 
-# number_list = [1,'2',3, 4,'5']
+number_list = [1,'2',3, 4,'5']
 
-# number_list_1 = [int(i) for i in number_list]
+number_list_1 = [int(i) for i in number_list]
 
-# print(sum(number_list_1))
+print(sum(number_list_1))
 
 # 3.Используя циклы, проверьте при помощи оператора in наличие символов строки 'abcde123' в строке 'bad_cat_23', 
 # выводя результаты проверки на экран в виде «Символ "a" есть в "bad_cat_23".» или «Символа "n" нет в "bad_cat_23".».
 
-# list_1 = 'abcde123'
-# list_2 = 'bad_cat_23'
+list_1 = 'abcde123'
+list_2 = 'bad_cat_23'
 
-# for i in list_1:
-#     if i in list_2:
-#         print(f'Символ "{i}" есть в "{list_2}"')  
-#     else:
-#         print(f'Символ "{i}" нет в "{list_2}"')
+for i in list_1:
+    if i in list_2:
+        print(f'Символ "{i}" есть в "{list_2}"')  
+    else:
+        print(f'Символ "{i}" нет в "{list_2}"')
 
 
 # 4. Cгенерируйте и выведите на экран мозаичное изображение гексагональной сетки, напоминающее мелкоячеистую проволочную сетку.
-# x_size = 15
-# y_size = 10
+x_size = 15
+y_size = 10
 
-# for i in range(y_size):
-#     for x in range(x_size):
-#         print(r'/ \_', end='')
-#     print()
-#     for x in range(x_size):
-#         print(r'\_/ ', end='')
-#     print()
+for i in range(y_size):
+    for x in range(x_size):
+        print(r'/ \_', end='')
+    print()
+    for x in range(x_size):
+        print(r'\_/ ', end='')
+    print()
