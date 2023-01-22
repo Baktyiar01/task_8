@@ -115,58 +115,24 @@
 # 3.Используя циклы, проверьте при помощи оператора in наличие символов строки 'abcde123' в строке 'bad_cat_23', 
 # выводя результаты проверки на экран в виде «Символ "a" есть в "bad_cat_23".» или «Символа "n" нет в "bad_cat_23".».
 
-list_1 = 'abcde123'
-list_2 = 'bad_cat_23'
+# list_1 = 'abcde123'
+# list_2 = 'bad_cat_23'
 
-if list_1[0] in list_2:
-    print(f'Символ "{list_1[0]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[0]}" нет в "{list_2}"')
-
-if list_1[1] in list_2:
-    print(f'Символ "{list_1[1]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[1]}" нет в "{list_2}"')
-
-if list_1[2] in list_2:
-    print(f'Символ "{list_1[2]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[2]}" нет в "{list_2}"')
-
-if list_1[3] in list_2:
-    print(f'Символ "{list_1[3]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[4]}" нет в "{list_2}"')
-
-if list_1[4] in list_2:
-    print(f'Символ "{list_1[4]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[4]}" нет в "{list_2}"')
-
-if list_1[5] in list_2:
-    print(f'Символ "{list_1[5]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[5]}" нет в "{list_2}"')
-
-if list_1[6] in list_2:
-    print(f'Символ "{list_1[6]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[6]}" нет в "{list_2}"')
-
-if list_1[-1] in list_2:
-    print(f'Символ "{list_1[-1]}" есть в "{list_2}"')
-else:
-    print(f'Символ "{list_1[-1]}" нет в "{list_2}"')
+# for i in list_1:
+#     if i in list_2:
+#         print(f'Символ "{i}" есть в "{list_2}"')  
+#     else:
+#         print(f'Символ "{i}" нет в "{list_2}"')
 
 
 # 4. Cгенерируйте и выведите на экран мозаичное изображение гексагональной сетки, напоминающее мелкоячеистую проволочную сетку.
-x_size = 15
-y_size = 10
+# x_size = 15
+# y_size = 10
 
-for i in range(y_size):
-    for x in range(x_size):
-        print(r'/ \_', end='')
-    print()
-    for x in range(x_size):
-        print(r'\_/ ', end='')
-    print()
+# for i in range(y_size):
+#     for x in range(x_size):
+#         print(r'/ \_', end='')
+#     print()
+#     for x in range(x_size):
+#         print(r'\_/ ', end='')
+#     print()
